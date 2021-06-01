@@ -1,0 +1,71 @@
+.fixedone{
+  position: fixed;
+  top:5rem;
+  right: 1rem;
+  background-color: #A50000;
+  color: white;
+  border:0px;padding:3px 5px;
+  cursor: pointer;
+}
+.fixedone:hover{
+  transform: scale(1.1);
+}
+
+.isnone{
+  display: none;
+}
+.watch{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.459);
+}
+
+
+.centerbox{
+  width: 40vw;
+  position: absolute;
+  left:30vw;
+  display: flex;
+  flex-direction: column;
+  top: 20vh;
+  /* height: 30vw; */
+  background-color: rgb(246, 246, 246);
+}
+.centerbox h1{
+  text-align: center;
+  margin-top: 2rem;
+  font-family: cursive;
+}
+
+.list{
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding:1rem 2rem;
+}
+.centerbox button{ 
+  width: 5rem;
+  padding: 3px 5px;
+  /* height: 2rem; */
+  background-color: #A50000;
+  border:0px;
+  color: white;
+  cursor: pointer;
+  /* margin-top: 2rem; */
+}
+.centerbox li{
+  margin-top: 1rem;
+}
+.buttonline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.centerbox h4{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+

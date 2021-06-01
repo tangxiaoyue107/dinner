@@ -1,0 +1,27 @@
+.twobox{
+  width: 100%;
+  height: 30vw;
+  display: flex;
+}
+/* .twobox .special{
+  width: 19vw;
+  height: 30vw;
+  background-image: url(../img/menu.jpg);
+  background-size: 100% 100%;
+} */
+.special h1{
+  text-align: center;
+  margin-top: 7rem;
+  color: #ffffff;
+}
+.special ul{
+  width: 10rem;
+  margin:0 auto;
+  margin-top: 3rem;
+
+}
+.special ul li{
+  margin:1rem 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+}

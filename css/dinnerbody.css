@@ -1,0 +1,32 @@
+
+.kind h1{
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.onecai{
+  text-align: center;
+  display: inline-block;
+  width: 15vw;
+  height: 18vw;
+  /* background-color: aqua; */
+  margin:2rem 2rem;
+}
+.onecai img{
+  width: 12rem;
+}
+.onecai h6{
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+.onecai button{
+  background-color: brown;
+  border:0px;
+  color: white;
+  padding:0.5rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.onecai button:hover{
+  /* color: brown; */
+  background-color: rgb(199, 35, 35);
+}

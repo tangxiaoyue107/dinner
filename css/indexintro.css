@@ -1,0 +1,47 @@
+.intro{
+  display: flex;
+}
+.leftimg{
+  width: 50vw;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftimg img{
+  width: 70%;
+}
+.righttxt{
+  width: 30vw;
+  padding-top: 3rem;
+  position: relative;
+  left:5rem;
+}
+.righttxt h1{
+  font-size: 3rem;
+  text-align: center;
+  color: #b30202bd;
+  font-family: cursive;
+}
+.righttxt p{
+  margin-top: 4rem;
+  color: #b30202bd;
+  font-family: cursive;
+  font-size: 1.3rem;
+  text-indent: 2.5rem;
+}
+.righttxt div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.righttxt button{
+  width: 7rem;
+  height: 2rem;
+  background-color: #b30202bd;
+  border:0px;
+  cursor: pointer;
+  color: white;
+}

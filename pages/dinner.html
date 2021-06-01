@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酒店点餐管理系统</title>
+    <link rel="stylesheet" href="../css//nav.css">
+    <link rel="stylesheet" href="../css/watchdi.css">
+    <link rel="stylesheet" href="../css/dinnerbody.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+            background-color: rgba(251, 243, 232, 0.452);
+            font-size: calc(100vw/100);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav>
+        <div class="wholenavbox">
+            <div class="title" onclick="javascript:window.open('../slide_1.html','_self')">
+                <img src="../img/dinner.png" alt="" >
+                <span>中华酒店点餐管理</span>
+            </div>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="搜索餐品">
+                <img src="../img/find.png" alt="" onclick="javascript:alert('未开放！敬请期待！')">
+            </div>
+            <div class="navbox">
+                <a href="../slide_1.html">主页</a>
+                <a href="dinner.html">点餐</a>
+                <a href="" onclick="javascript:alert('未开放！敬请期待！')">会员</a>
+                <a href="" onclick="javascript:alert('未开放！敬请期待！')">订单历史</a>
+                <a href="" onclick="javascript:alert('未开放！敬请期待！')">联系我们</a>
+            </div>
+        </div>
+    </nav>  
+    <!-- 点餐 -->
+    <div class="bodymanu">
+        <script type="text/html" id="manuid">
+            {{each caiping value index}}
+            <div class="kind">
+                <h1>{{index+1}}、{{value.title}}</h1>
+                {{each value.caiping value1 index1}}
+                <div class="onecai">
+                    <div class="pic">
+                        <img src='{{value1.imgurl}}' alt="">
+                    </div>
+                    <div class="txt">
+                        <h6>{{value1.name}}</h6>
+                        <h6>{{value1.price}}元</h6>
+                        <button onclick=diancan('{{value1.name}}',{{value1.price}})>加入购物车</button>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            {{/each}}
+        </script>
+    </div>
+    
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="oneline">
+            <h5>联系电话:15879171568</h5>
+        </div>
+        <div class="oneline">
+            <h5>地址:江西省南昌市</h5>
+        </div>
+        <div class="oneline">
+            <h5>邮箱:56166@qq.com</h5>
+        </div>
+        <div class="oneline">
+            <h5>Copyright from @中华酒店点餐管理</h5>
+        </div>
+    </footer>
+
+    <button onclick="watchyidian()" class="fixedone">点击查看购物车</button>
+    <!-- 查看已点 -->
+    <div class="watch isnone">
+        <div class="centerbox">
+            <h1>你的购物车</h1>
+            <div class="list">
+                <script type="text/html" id="shoppingid">
+                    {{each shopping_list value index}}
+                        <li><button class="dele" onclick=delecai('{{value.name}}') style="margin-right:2rem;width:3rem;">删除</button>{{value.name}}————{{value.price}}元   </li>
+                    {{/each}}
+                    <h4>总计：{{totalprice}}元</h4>
+                </script>                
+            </div>
+            <div class="buttonline">
+                <button onclick="back()">返回上一步</button>
+                <button onclick="submit()" style="margin-left: 2rem;">提交订单</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 引入js -->
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/template-web.js"></script>
+<script src="../js/dinner.js"></script>
+</body>
+</html>

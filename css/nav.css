@@ -1,0 +1,68 @@
+.wholenavbox{
+  width: 100%;
+  padding:0 5vw;
+  height: 4rem;
+  background-color: rgb(165, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wholenavbox .title{
+  width: 17vw;
+  height: 4rem;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wholenavbox .title img{
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left:1rem;
+  transform: scale(0.7);
+}
+.wholenavbox .title span{
+  font-size: 2rem;
+  font-family:cursive;
+  color: #ffffff;
+}
+.wholenavbox .search{
+  width: 30vw;
+  height: 4rem;
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+}
+.wholenavbox .search input{
+  background-color: inherit;
+  /* border:0px; */
+  width: 20rem;
+  height: 2rem;
+  border:0px;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  color: #ffffff;
+}
+.wholenavbox .search input::-webkit-input-placeholder{
+  color: #ffffffad;
+}
+.wholenavbox .search img{
+  width: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  right:1.7rem;
+}
+.wholenavbox .navbox{
+  width: 28vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  /* background-color: black; */
+}
+.wholenavbox .navbox a{
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 1rem;
+}
